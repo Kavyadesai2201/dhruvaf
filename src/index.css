@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@500;700&display=swap');
+
+:root {
+  --body: 'Bricolage Grotesque', system-ui, sans-serif;
+  --hand: 'Caveat', cursive;
+  --night: #1a1238;
+  --rani: #ff5c93;
+  --marigold: #ffc53d;
+  --lilac: #cdbdff;
+  --paper: #fff8ee;
+  --ink: #2a1a3d;
+  font-family: var(--body);
+  color: var(--paper);
+  background: var(--night);
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-width: 320px; min-height: 100vh;
+  background:
+    radial-gradient(900px 600px at 90% -10%, #6a2f9a 0%, transparent 60%),
+    radial-gradient(800px 600px at -5% 105%, #8a2160 0%, transparent 55%),
+    var(--night);
+  background-attachment: fixed;
+}
+button { font: inherit; }
+:focus-visible { outline: 3px solid var(--marigold); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
